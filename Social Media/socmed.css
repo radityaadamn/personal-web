@@ -1,0 +1,23 @@
+body {
+    font-family: poppins;
+    font-size: 15px;
+}
+nav {
+    box-shadow: 0px 7px 7px #ccc
+}
+.container-content {
+    width: 100%px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wrapper {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+a {
+    color: black;
+}
