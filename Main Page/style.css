@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    scroll-behavior: smooth;
+}
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-weight: 100;
+} 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /
+}
+.nav-link:hover {
+    color: #CC7942;
+}
+a {
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.content {
+    height: 100rem;
+}
+.wrapper1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #161616;
+    height: 42rem;
+    color: #FFFFFF;
+}
+h2 > span {
+    color: #CC7942;
+}
+.wrapper1 > p {
+    margin-top: 25px; 
+    margin-bottom: 25px;  
+}
+.btnAboutMe {
+    margin-top: 15px;
+}
+.aboutme {
+    border: 0.5px solid #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 15px;
+}
+.aboutme:hover {
+    border: none;
+    background-color: #CC7942;
+    color: #060606;
+    font-weight: 600;
+}
+.wrapper2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #CC7942;
+    height: 40rem;
+}
+.wrapper2 > h2 {
+    margin-top: 40px;
+    color: #060606;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.profileImg > img {
+    border-radius: 50%;
+    height: 200px;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+.description {
+    background-color: #161616;
+    color: #FFFFFF;
+    padding: 30px;
+    width: 27rem;
+    border-radius: 12px;
+    margin-left: 40px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.programmingLogo {
+    background-color: #161616;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 8px;
+}
+.programmingLogo > img {
+    border: none;
+    width: 5rem;
+    height: 4.5rem;
+    padding: 5px;
+}
+.wrapper3 {
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    background-color: #1E1E1E;
+}
+.wrapper3 > h2 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+.bakemyday, .capstoneRevou {
+    display: flex;
+    flex-direction: column;
+}
+.bakemyday {
+    margin-left: 100px;
+}
+.bakemyday > img, .capstoneRevou > img {
+    width: 25rem;
+    height: 12rem;
+}
+.projectDescription {
+    height: 8.5rem;
+    background-color: #212529;
+    width: 25rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.projectDescription > p {
+    margin: 8px 8px 8px 12px;
+    color: #FFFFFF;
+}
+.projectDescription > .link > a {
+    text-decoration: none;
+}
+.projectDescription > .link > a:hover {
+    color: #CC7942;
+}
+.wrapper4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    background-color: #CC7942;
+}
+.wrapper4 > .messageForm > h2 {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+.messageForm {
+    background-color: #161616;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 15px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.name > input[type="text"], .message > textarea {
+    border: 0.5px solid #FFFFFF;
+    background-color: #161616;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-top: 12px;
+    margin-bottom : 10px;
+    width: 25rem;
+    height: 3rem;
+}
+input::placeholder, textarea::placeholder {
+    color: #FFFFFF;
+    padding: 5px;
+}
+.button {
+    display: flex;
+    justify-content: flex-start;
+}
+#submit {
+  border: 0.5px solid #CC7942;
+  border-radius: 10px;
+  font-family: poppins;
+  padding: 8px;
+  width: 5.5rem;
+  background-color: #161616;
+  color: #CC7942;
+}
+#submit:hover {
+    background-color: #CC7942;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+footer {
+    background-color: #1E1E1E;
+    color: #CC7942;
+    text-align: center;
+    padding: 5px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-left: 14.5rem;
+}
+.social > a > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 2px;
+}
+@media screen and (max-width: 480px) {
+.wrapper2 {
+    height: 50rem;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.profileImg {
+    display: flex;
+    justify-content: center;
+}
+.description {
+    background-color: #161616;
+    color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px;
+    width: auto;
+}
+    .programmingLogo {
+        display: flex;
+        flex-direction: row;
+        background-color: #161616;
+        border-radius: 12px;
+        margin-top: 25px;
+        padding: 1px;
+        width: auto;
+}
+    .programmingLogo > img {
+        border: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 5px;
+        margin: 5px;
+}
+    .wrapper3 {
+        display: flex;
+        flex-direction: column;
+        height: 58rem;
+}
+    .wrapper3 > h2 {
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 20px;
+}
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+    .bakemyday > img, .capstoneRevou > img {
+        width: auto;
+        height: 13rem;
+}
+    .projectDescription {
+        width: auto;
+}
+    .projectDescription > p {
+        font-size: 0.9rem;
+        margin: 8px 8px 8px 13px;
+    }
+    .bakemyday {
+        margin-top: 50px;
+        margin-left: 0;
+}
+    .projectDescription > .link {
+        padding: 5px;
+}
+    .projectDescription > .link > a {
+        text-decoration: none;
+    }
+    .wrapper4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    background-color: #CC7942;
+}
+.wrapper4 > .messageForm > h2 {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+.messageForm {
+    background-color: #161616;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 15px;
+    width: 18rem;
+    height: 18.5rem;
+    padding: 18px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.name > input[type="text"], .message > textarea {
+    border: 0.5px solid #FFFFFF;
+    background-color: #161616;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-bottom : 10px;
+    width: 15rem;
+    height: 3.5rem;
+}
+input::placeholder, textarea::placeholder {
+    color: #FFFFFF;
+    padding: 5px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-left: 5rem;
+}
+.social > a > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 3px;
+}
+}
+
