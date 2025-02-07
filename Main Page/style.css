@@ -34,8 +34,8 @@ h2 > span {
     color: #CC7942;
 }
 .wrapper1 > p {
-    margin-top: 25px; 
-    margin-bottom: 25px;  
+    margin-top: 10px; 
+    margin-bottom: 15px;  
 }
 .btnAboutMe {
     margin-top: 15px;
@@ -57,12 +57,12 @@ h2 > span {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #CC7942;
+    background-color: #060606;
     height: 40rem;
 }
 .wrapper2 > h2 {
     margin-top: 40px;
-    color: #060606;
+    color: #FFFFFF;
 }
 .profile {
     display: flex;
@@ -78,17 +78,20 @@ h2 > span {
 .description {
     background-color: #161616;
     color: #FFFFFF;
-    padding: 30px;
-    width: 27rem;
+    padding: 20px;
+    width: 30rem;
     border-radius: 12px;
-    margin-left: 40px;
+    margin-left: 200px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 .programmingLogo {
+    display: flex;
+    justify-content: space-between;
     background-color: #161616;
     border-radius: 5px;
     margin-top: 50px;
     padding: 8px;
+    width: 54rem;
 }
 .programmingLogo > img {
     border: none;
@@ -99,8 +102,8 @@ h2 > span {
 .wrapper3 {
     display: flex;
     flex-direction: column;
-    height: 32rem;
-    background-color: #1E1E1E;
+    height: 30.5rem;
+    background-color: #161616;
 }
 .wrapper3 > h2 {
     color: #FFFFFF;
@@ -112,7 +115,7 @@ h2 > span {
     flex-direction: row;
     justify-content: center;
     padding: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .bakemyday, .capstoneRevou {
     display: flex;
@@ -127,7 +130,7 @@ h2 > span {
 }
 .projectDescription {
     height: 8.5rem;
-    background-color: #212529;
+    background-color: #060606;
     width: 25rem;
     border-radius: 0 0 12px 12px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -146,8 +149,8 @@ h2 > span {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30rem;
-    background-color: #CC7942;
+    height: 35rem;
+    background-color: #060606;
 }
 .wrapper4 > .messageForm > h2 {
     color: #FFFFFF;
@@ -196,10 +199,10 @@ input::placeholder, textarea::placeholder {
     transition: 0.5s;
 }
 footer {
+    text-align: center;
     background-color: #1E1E1E;
     color: #CC7942;
-    text-align: center;
-    padding: 5px;
+    
 }
 .social {
     display: flex;
@@ -213,6 +216,9 @@ footer {
     margin: 2px;
 }
 @media screen and (max-width: 480px) {
+.wrapper1 > p {
+    padding: 12px;
+}
 .wrapper2 {
     height: 50rem;
 }
@@ -238,7 +244,7 @@ footer {
         flex-direction: row;
         background-color: #161616;
         border-radius: 12px;
-        margin-top: 25px;
+        margin-top: 12px;
         padding: 1px;
         width: auto;
 }
@@ -252,7 +258,7 @@ footer {
     .wrapper3 {
         display: flex;
         flex-direction: column;
-        height: 58rem;
+        height: 54.5rem;
 }
     .wrapper3 > h2 {
         color: #FFFFFF;
@@ -263,6 +269,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 10px;
 }
     .bakemyday > img, .capstoneRevou > img {
         width: auto;
@@ -273,7 +280,7 @@ footer {
 }
     .projectDescription > p {
         font-size: 0.9rem;
-        margin: 8px 8px 8px 13px;
+        margin: 2.5px 8px 8px 13px;
     }
     .bakemyday {
         margin-top: 50px;
@@ -289,8 +296,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 25rem;
-    background-color: #CC7942;
+    height: 22rem;
+    background-color: #060606;
 }
 .wrapper4 > .messageForm > h2 {
     color: #FFFFFF;
@@ -299,10 +306,10 @@ footer {
 .messageForm {
     background-color: #161616;
     border-radius: 12px;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 15px;
     width: 18rem;
-    height: 18.5rem;
+    height: 17.5rem;
     padding: 18px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -323,12 +330,18 @@ input::placeholder, textarea::placeholder {
     display: flex;
     flex-direction: row;
     padding: 5px;
-    margin-left: 5rem;
+    margin-left: 4.2rem;
 }
 .social > a > img {
     width: 1.5rem;
     height: 1.5rem;
-    margin: 3px;
+    margin-right: 6px;
+}
+footer > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
 }
 }
 
