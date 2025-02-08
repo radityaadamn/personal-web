@@ -1,12 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: poppins;
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
     scroll-behavior: smooth;
 }
 .navbar-nav .nav-link {
     color: #FFFFFF;
-    font-weight: 100;
+    font-weight: 300;
 } 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /
@@ -197,7 +198,7 @@ input::placeholder, textarea::placeholder {
 #submit {
   border: 0.5px solid #CC7942;
   border-radius: 10px;
-  font-family: poppins;
+  font-family: montserrat;
   padding: 8px;
   width: 5.5rem;
   background-color: #161616;
@@ -210,8 +211,8 @@ input::placeholder, textarea::placeholder {
 }
 footer {
     text-align: center;
-    background-color: #1E1E1E;
-    color: #CC7942;
+    background-color: #161616;
+    color: #FFFFFF;
     
 }
 .social {
@@ -230,7 +231,7 @@ footer {
     padding: 12px;
 }
 .wrapper2 {
-    height: 47.5rem;
+    height: 46rem;
 }
 .profile {
     display: flex;
