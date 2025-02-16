@@ -247,7 +247,6 @@ footer {
     text-align: center;
     background-color: #161616;
     color: #FFFFFF;
-    
 }
 .social {
     display: flex;
@@ -363,7 +362,6 @@ footer {
     width: 18rem;
     height: 25.7rem;
     padding: 18px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .name > input[type="text"], .email > input[type="email"] {
     border: 0.5px solid #FFFFFF;
