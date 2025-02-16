@@ -5,9 +5,6 @@ body {
     font-weight: 300;
     scroll-behavior: smooth;
 }
-nav {
-    border-bottom: 0.1px solid #FFFFFF;
-}
 .navbar-nav .nav-link {
     color: #FFFFFF;
     font-weight: 300;
@@ -30,7 +27,7 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #060606;
+    background-color: #161616;
     height: 42rem;
     color: #FFFFFF;
 }
@@ -146,7 +143,7 @@ h2 > span {
     display: flex;
     flex-direction: column;
     height: 30.5rem;
-    background-color: #060606;
+    background-color: #161616;
 }
 .wrapper4 > h2 {
     color: #FFFFFF;
