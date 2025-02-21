@@ -305,6 +305,9 @@ footer {
 .wrapper3 {
     height: 48.5rem;
 }
+.wrapper3 > h2 {
+    margin-top: 20px;
+}
 .skills {
     display: flex;
     flex-direction: column;
