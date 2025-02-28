@@ -46,7 +46,7 @@ h2 > span {
     color: #FFFFFF;
     text-decoration: none;
     padding: 13px;
-    border-radius: 15px;
+    border-radius: 12px;
     transition: background-color 0.3s, color 0.3s;
 }
 .aboutme:hover {
@@ -127,7 +127,7 @@ h2 > span {
 .skill {
     color: #FFFFFF;
     background-color: #161616;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 15px 20px;
     margin: 15px;
     width: 300px;
@@ -165,6 +165,7 @@ h2 > span {
 .bakemyday > img, .capstoneRevou > img {
     width: 25rem;
     height: 10.8rem;
+    border-radius: 12px 12px 0 0;
 }
 .projectDescription {
     height: 8.5rem;
