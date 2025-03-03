@@ -117,7 +117,7 @@ h3 > span {
 .wrapper3 > h2 {
     color: #FFFFFF;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 45px;
 }
 .skills {
     display: grid;
@@ -268,7 +268,7 @@ footer {
     padding: 12px;
 }
 .wrapper2 {
-    height: 54rem;
+    height: 52rem;
 }
 .profile {
     display: flex;
@@ -310,7 +310,7 @@ footer {
     height: 48.5rem;
 }
 .wrapper3 > h2 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .skills {
     display: flex;
