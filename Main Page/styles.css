@@ -31,10 +31,11 @@ a {
     height: 42rem;
     color: #FFFFFF;
 }
-h2 > span {
+h3 > span {
     color: #CC7942;
 }
 .wrapper1 > p {
+    font-size: 1.2rem;
     margin-top: 10px; 
     margin-bottom: 15px;  
 }
@@ -84,6 +85,7 @@ h2 > span {
     width: 30rem;
     border-radius: 12px;
     margin-left: 200px;
+    text-align: justify;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 .programmingLogo {
@@ -115,7 +117,7 @@ h2 > span {
 .wrapper3 > h2 {
     color: #FFFFFF;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 55px;
 }
 .skills {
     display: grid;
@@ -172,6 +174,7 @@ h2 > span {
     background-color: #060606;
     width: 25rem;
     border-radius: 0 0 12px 12px;
+    text-align: justify;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 .projectDescription > p {
@@ -265,7 +268,7 @@ footer {
     padding: 12px;
 }
 .wrapper2 {
-    height: 46rem;
+    height: 54rem;
 }
 .profile {
     display: flex;
