@@ -123,7 +123,7 @@ h3 > span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px; 
-    padding: 20px;
+    padding: 15px;
     justify-items: center;
 }
 .skill {
@@ -310,16 +310,16 @@ footer {
     height: 48.5rem;
 }
 .wrapper3 > h2 {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .skills {
     display: flex;
     flex-direction: column;
 }
-    .wrapper4 {
-        display: flex;
-        flex-direction: column;
-        height: 47.5rem;
+.wrapper4 {
+    display: flex;
+    flex-direction: column;
+    height: 47.5rem;
 }
     .wrapper4 > h2 {
         color: #FFFFFF;
