@@ -436,7 +436,7 @@ footer > p {
         padding: 20px;
         width: 30rem;
         border-radius: 12px;
-        margin-left: 60px;
+        margin-left: 30px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 .programmingLogo {
@@ -444,22 +444,26 @@ footer > p {
     justify-content: space-between;
     background-color: #161616;
     border-radius: 12px;
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 12px;
-    width: 52rem;
+    width: 50rem;
 }
 .programmingLogo > img {
     border: none;
-    width: 5rem;
-    height: 4.5rem;
+    width: 4.5rem;
+    height: 4rem;
     padding: 5px;
+}
+#sql {
+    height: 4rem;
 }
 .wrapper3 {
     height: 27rem;
+    margin-top: 50px;
 }
 .skill {
     padding: 25px 25px;
-    width: 250px;
+    width: 240px;
     height: 7.5rem;
 }
 .wrapper4 {
