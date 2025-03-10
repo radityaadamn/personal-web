@@ -122,7 +122,7 @@ h3 > span {
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px; 
+    gap: 15px; 
     padding: 15px;
     justify-items: center;
 }
@@ -130,7 +130,7 @@ h3 > span {
     color: #FFFFFF;
     background-color: #161616;
     border-radius: 12px;
-    padding: 15px 20px;
+    padding: 5px 20px;
     margin: 15px;
     width: 300px;
     height: 5rem;
@@ -142,8 +142,8 @@ h3 > span {
 .wrapper4 {
     display: flex;
     flex-direction: column;
-    height: 30.5rem;
-    background-color: #161616;
+    height: 27rem;
+    background-color: #060606;
 }
 .wrapper4 > h2 {
     color: #FFFFFF;
@@ -152,37 +152,46 @@ h3 > span {
 }
 .projects {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding: 15px;
-    margin-top: 30px;
+    flex-direction: row;
+    margin-top: 20px;
 }
-.bakemyday, .capstoneRevou {
-    display: flex;
-    flex-direction: column;
+.project {
+    position: relative;
+    width: auto;
+    margin: 10px;
 }
-.bakemyday {
-    margin-left: 100px;
-}
-.bakemyday > img, .capstoneRevou > img {
-    width: 25rem;
-    height: 10.8rem;
-    border-radius: 12px 12px 0 0;
+.project > img {
+    width: 40rem;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 .projectDescription {
-    height: 8.5rem;
-    background-color: #060606;
-    width: 25rem;
-    border-radius: 0 0 12px 12px;
-    text-align: justify;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-}
-.projectDescription > p {
-    margin: 8px 8px 8px 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #161616;
+    border-radius: 12px; 
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 35px;
 }
-.projectDescription > .link > a:hover {
-    color: #CC7942;
+.projectDescription > p, i {
+    margin-top: 15px;
+}
+.project:hover .projectDescription {
+    opacity: 1; /* Show description on hover */
 }
 .wrapper5 {
     display: flex;
@@ -264,146 +273,158 @@ footer {
     margin: 2px;
 }
 @media screen and (max-width: 480px) {
-.wrapper1 > p {
-    padding: 12px;
-}
-.wrapper2 {
-    height: 52rem;
-}
-.profile {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-.profileImg {
-    display: flex;
-    justify-content: center;
-}
-.description {
-    background-color: #161616;
-    color: #FFFFFF;
-    padding: 15px;
-    border-radius: 12px;
-    margin: 20px;
-    width: auto;
-}
-.programmingLogo {
-    display: flex;
-    flex-direction: row;
-    background-color: #161616;
-    border-radius: 12px;
-    margin-top: 4.5px;
-    padding: 1px;
-    width: auto;
-}
-.programmingLogo > img {
-    border: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 5px;
-    margin: 5px;
-}
-#sql {
-    height: 2.2rem;
-}
-.wrapper3 {
-    height: 48.5rem;
-}
-.wrapper3 > h2 {
-    margin-top: 20px;
-}
-.skills {
-    display: flex;
-    flex-direction: column;
-}
-.wrapper4 {
-    display: flex;
-    flex-direction: column;
-    height: 47.5rem;
-}
+    .wrapper1 > p {
+        padding: 12px;
+    }
+    .wrapper2 {
+        height: 52rem;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .profileImg {
+        display: flex;
+        justify-content: center;
+    }
+    .description {
+        background-color: #161616;
+        color: #FFFFFF;
+        padding: 15px;
+        border-radius: 12px;
+        margin: 20px;
+        width: auto;
+    }
+    .programmingLogo {
+        display: flex;
+        flex-direction: row;
+        background-color: #161616;
+        border-radius: 12px;
+        margin-top: 4.5px;
+        padding: 1px;
+        width: auto;
+    }
+    .programmingLogo > img {
+        border: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 5px;
+        margin: 5px;
+    }
+    #sql {
+        height: 2.2rem;
+    }
+    .wrapper3 {
+        height: 48.5rem;
+    }
+    .wrapper3 > h2 {
+        margin-top: 20px;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper4 {
+        display: flex;
+        flex-direction: column;
+        height: 31rem;
+    }
     .wrapper4 > h2 {
         color: #FFFFFF;
         text-align: center;
-        margin-top: 20px;
-}
+        margin-top: 35px;
+    }
     .projects {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 5px;
-}
-    .bakemyday > img, .capstoneRevou > img {
-        width: auto;
-        height: 11rem;
-}
-    .projectDescription {
-        width: auto;
-}
-    .projectDescription > p {
-        font-size: 0.9rem;
-        margin: 2.5px 8px 8px 13px;
+        margin-top: 0;
+        padding: 15px;
     }
-    .bakemyday {
-        margin-top: 28px;
-        margin-left: 0;
-}
-    .projectDescription > .link {
-        padding: 5px;
-}
+    .project {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .project > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .projectDescription {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        top: 0;
+        left: 0;
+    }
+    .projectDescription > h3 {
+        font-size: 1rem;
+        margin-bottom : 5px;
+    }
+    .projectDescription > p {
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+    .projectDescription > i {
+        margin-top: 5px;
+    }
     .wrapper5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 31rem;
-    background-color: #060606;
-}
-.wrapper5 > .messageForm > h2 {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-}
-.messageForm {
-    background-color: #161616;
-    border-radius: 12px;
-    margin-top: 10px;
-    padding: 15px;
-    width: 18rem;
-    height: 25.7rem;
-    padding: 18px;
-}
-.name > input[type="text"], .email > input[type="email"] {
-    border: 0.5px solid #FFFFFF;
-    background-color: #161616;
-    border-radius: 5px;
-    margin-top: 12px;
-    margin-bottom : 10px;
-    width: 15rem;
-    height: 3.5rem;
-}
-.message > textarea {
-    width: 15rem;
-    height: 7rem;
-}
-input::placeholder, textarea::placeholder {
-    color: #FFFFFF;
-    padding: 4px;
-}
-.social {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    margin-left: 4.2rem;
-}
-.social > a > img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 6px;
-}
-footer > p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2.5rem;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 31rem;
+        background-color: #060606;
+    }
+    .wrapper5 > .messageForm > h2 {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+    .messageForm {
+        background-color: #161616;
+        border-radius: 12px;
+        margin-top: 10px;
+        padding: 15px;
+        width: 18rem;
+        height: 25.7rem;
+        padding: 18px;
+    }
+    .name > input[type="text"], .email > input[type="email"] {
+        border: 0.5px solid #FFFFFF;
+        background-color: #161616;
+        border-radius: 5px;
+        margin-top: 12px;
+        margin-bottom : 10px;
+        width: 15rem;
+        height: 3.5rem;
+    }
+    .message > textarea {
+        width: 15rem;
+        height: 7rem;
+    }
+    input::placeholder, textarea::placeholder {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        margin-left: 4.2rem;
+    }
+    .social > a > img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 6px;
+    }
+    footer > p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 834px) {
     .wrapper1 > p {
@@ -438,71 +459,67 @@ footer > p {
         border-radius: 12px;
         margin-left: 30px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-}
-.programmingLogo {
-    display: flex;
-    justify-content: space-between;
-    background-color: #161616;
-    border-radius: 12px;
-    margin-top: 40px;
-    padding: 12px;
-    width: 50rem;
-}
-.programmingLogo > img {
-    border: none;
-    width: 4.5rem;
-    height: 4rem;
-    padding: 5px;
-}
-#sql {
-    height: 4rem;
-}
-.wrapper3 {
-    height: 27rem;
-    margin-top: 50px;
-}
-.skill {
-    padding: 25px 25px;
-    width: 240px;
-    height: 7.5rem;
-}
-.wrapper4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 75rem;
-}
-.wrapper4 > h2 {
-    margin-top: 40px;
-}
-.projects {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    margin-left: 18px;
-    margin-right: 18px;
-}
-.bakemyday {
-    margin-left: 0;
-    margin-top: 100px;
-}
-.bakemyday > img, .capstoneRevou > img {
-    width: auto;
-    height: 22rem;
-}
-.projectDescription {
-    width: auto;
-}
-.projectDescription > p {
-    font-size: 1.2rem;
-    margin: 2.5px 8px 8px 15px;
-}
-.bakemyday {
-    margin-top: 40px;
-    margin-left: 0;
-}
-.projectDescription > .link {
-    font-size: 1.2rem;
-    padding: 5px;
-}
+    }
+    .programmingLogo {
+        display: flex;
+        justify-content: space-between;
+        background-color: #161616;
+        border-radius: 12px;
+        margin-top: 40px;
+        padding: 12px;
+        width: 50rem;
+    }
+    .programmingLogo > img {
+        border: none;
+        width: 4.5rem;
+        height: 4rem;
+        padding: 5px;
+    }
+    #sql {
+        height: 4rem;
+    }
+    .wrapper3 {
+        height: 27rem;
+        margin-top: 50px;
+    }
+    .skill {
+        padding: 25px 25px;
+        width: 240px;
+        height: 7.5rem;
+    }
+    .wrapper4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 58rem;
+    }
+    .wrapper4 > h2 {
+        margin-top: 40px;
+    }
+    .projects {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        padding: 30px;
+    }
+    .project {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .project img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .projectDescription {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        top: 0;
+        left: 0;
+    }
+    .projectDescription > p {
+        font-size: 1.2rem;
+    }   
 }
