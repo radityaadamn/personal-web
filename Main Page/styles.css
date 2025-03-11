@@ -185,7 +185,7 @@ h3 > span {
     text-align: justify;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
     padding: 35px;
 }
 .projectDescription > p, i {
@@ -193,17 +193,7 @@ h3 > span {
 }
 .project:hover .projectDescription {
     opacity: 1; 
-    animation: slideUp 0.3s ease forwards;
-}
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
     transform: translateY(0);
-  }
 }
 .wrapper5 {
     display: flex;
