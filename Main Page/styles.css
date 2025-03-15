@@ -31,16 +31,19 @@ a {
     height: 42rem;
     color: #FFFFFF;
 }
+.wrapper1 > h3 {
+    font-size: 3rem;
+}
 h3 > span {
     color: #CC7942;
 }
 .wrapper1 > p {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     margin-top: 10px; 
     margin-bottom: 15px;  
 }
 .btnAboutMe {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .aboutme {
     border: 0.5px solid #FFFFFF;
@@ -61,11 +64,12 @@ h3 > span {
     align-items: center;
     flex-direction: column;
     background-color: #060606;
-    height: 35.5rem;
+    height: 45.5rem;
 }
 .wrapper2 > h2 {
     margin-top: 40px;
     color: #FFFFFF;
+    font-size: 2.5rem;
 }
 .profile {
     display: flex;
@@ -74,7 +78,7 @@ h3 > span {
 }
 .profileImg > img {
     border-radius: 50%;
-    height: 200px;
+    height: 350px;
     margin-top: 22px;
     margin-bottom: 20px;
 }
@@ -82,7 +86,8 @@ h3 > span {
     background-color: #161616;
     color: #FFFFFF;
     padding: 20px;
-    width: 30rem;
+    width: 40rem;
+    font-size: 1.5rem;
     border-radius: 12px;
     margin-left: 200px;
     text-align: justify;
@@ -95,7 +100,7 @@ h3 > span {
     border-radius: 12px;
     margin-top: 50px;
     padding: 8px;
-    width: 54rem;
+    width: 73.5rem;
 }
 .programmingLogo > img {
     border: none;
@@ -107,7 +112,7 @@ h3 > span {
     height: 4rem;
 }
 .wrapper3 {
-    height: 22rem;
+    height: 25rem;
     background-color: #060606;
     display: flex;
     flex-direction: column;
@@ -117,12 +122,13 @@ h3 > span {
 .wrapper3 > h2 {
     color: #FFFFFF;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 15px;
+    font-size: 2.5rem;
 }
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px; 
+    gap: 25px; 
     padding: 5px;
     justify-items: center;
 }
@@ -134,7 +140,7 @@ h3 > span {
     margin: 15px;
     width: 300px;
     height: 5rem;
-    text-align: center;
+    text-align: center;  
 }
 .skill > h5 {
     margin-top: 5px;
@@ -149,6 +155,7 @@ h3 > span {
     color: #FFFFFF;
     text-align: center;
     margin-top: 20px;
+    font-size: 2.5rem;
 }
 .projects {
     display: flex;
@@ -162,7 +169,7 @@ h3 > span {
     margin: 10px;
 }
 .project > img {
-    width: 40rem;
+    width: 38rem;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -275,11 +282,21 @@ footer {
     margin: 2px;
 }
 @media screen and (max-width: 480px) {
+    .wrapper1 > h3 {
+        font-size: 1.4rem;
+    }
     .wrapper1 > p {
         padding: 12px;
+        font-size: 1.1rem;
+    }
+    .btnAboutMe {
+        margin-top: 15px;
     }
     .wrapper2 {
-        height: 49rem;
+        height: 52rem;
+    }
+    .wrapper2 > h2 {
+        font-size: 1.8rem;     
     }
     .profile {
         display: flex;
@@ -290,6 +307,9 @@ footer {
         display: flex;
         justify-content: center;
     }
+    .profileImg > img {
+        height: 250px;
+    }
     .description {
         background-color: #161616;
         color: #FFFFFF;
@@ -297,6 +317,7 @@ footer {
         border-radius: 12px;
         margin: 20px;
         width: auto;
+        font-size: 1rem;
     }
     .programmingLogo {
         display: flex;
@@ -322,6 +343,7 @@ footer {
     }
     .wrapper3 > h2 {
         margin-top: 35px;
+        font-size: 1.8rem;
     }
     .skills {
         display: flex;
@@ -338,6 +360,7 @@ footer {
         color: #FFFFFF;
         text-align: center;
         margin-top: 35px;
+        font-size: 1.8rem;
     }
     .projects {
         display: flex;
@@ -434,10 +457,10 @@ footer {
     .wrapper1 > p {
         margin-top: 15px; 
         margin-bottom: 35px;
-        font-size: 1.2rem;  
+        font-size: 1.5rem;  
     }
     .aboutme {
-        padding: 20px;
+        padding: 25px;
     }
     .wrapper2 {
         height: 40rem;
@@ -451,7 +474,7 @@ footer {
     .profileImg > img {
         border-radius: 50%;
         height: 250px;
-        margin-top: 22px;
+        margin-top: 45px;
         margin-left: 50px;
     }
     .description {
@@ -484,11 +507,15 @@ footer {
     }
     .wrapper3 {
         height: 27rem;
+        width: auto;
         margin-top: 50px;
     }
+    .wrapper3 > h2 {
+        margin-bottom: 30px;
+    }
     .skill {
-        padding: 25px 25px;
-        width: 240px;
+        padding: 20px 20px;
+        width: 230px;
         height: 7.5rem;
     }
     .wrapper4 {
@@ -498,18 +525,18 @@ footer {
         height: 58rem;
     }
     .wrapper4 > h2 {
-        margin-top: 40px;
+        margin-top: 35px;
     }
     .projects {
         display: flex; 
         flex-direction: column; 
         align-items: center; 
-        padding: 30px;
+        padding: 20px;
     }
     .project {
         width: 100%;
         height: auto;
-        margin: 10px auto;
+        margin: 15px auto;
     }
     .project img {
         width: 100%;
