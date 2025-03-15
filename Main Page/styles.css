@@ -296,7 +296,7 @@ footer {
         height: 52rem;
     }
     .wrapper2 > h2 {
-        font-size: 1.8rem;     
+        font-size: 1.6rem;     
     }
     .profile {
         display: flex;
@@ -343,7 +343,7 @@ footer {
     }
     .wrapper3 > h2 {
         margin-top: 35px;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .skills {
         display: flex;
@@ -360,7 +360,7 @@ footer {
         color: #FFFFFF;
         text-align: center;
         margin-top: 35px;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .projects {
         display: flex;
