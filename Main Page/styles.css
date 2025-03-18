@@ -255,6 +255,20 @@ input::placeholder, textarea::placeholder {
     display: flex;
     justify-content: flex-start;
 }
+@keyframes subtle-glow {
+  0% {
+    box-shadow: 0 0 5px rgba(204, 121, 66, 0.3),
+                0 0 8px rgba(204, 121, 66, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(204, 121, 66, 0.4),
+                0 0 15px rgba(204, 121, 66, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(204, 121, 66, 0.3),
+                0 0 8px rgba(204, 121, 66, 0.15);
+  }
+}
 #submit {
   border: 0.5px solid #CC7942;
   border-radius: 10px;
@@ -263,9 +277,13 @@ input::placeholder, textarea::placeholder {
   width: 5.5rem;
   background-color: #161616;
   color: #CC7942;
-  transition: background-color 0.5s, color 0.5s;
+  transition: all 0.5s ease;
+  animation: subtle-glow 2s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(204, 121, 66, 0.2);
+  position: relative;
 }
 #submit:hover {
+    animation: subtle-glow 2s ease-in-out infinite;
     background-color: #CC7942;
     color: #FFFFFF;
 }
@@ -443,12 +461,12 @@ footer {
         display: flex;
         flex-direction: row;
         padding: 5px;
-        margin-left: 1.5rem;
+        margin-left: 1.8rem;
     }
     .social > a > img {
         width: 1.5rem;
         height: 1.5rem;
-        margin-right: 5px;
+        margin-right: 4px;
     }
     footer > p {
         display: flex;
