@@ -4,7 +4,15 @@ function sendMail() {
   var message = document.getElementById("message").value.trim();
 
   if (name === "" || email === "" || message === "") {
-    alert("Please fill in all fields before sending your message.");
+    Swal.fire({
+      icon: "warning",
+      title: "Oops...",
+      text: "Please fill in all fields before sending your message.",
+      confirmButtonText: "Okay",
+      customClass: {
+        popup: "custom-popup",
+      },
+    });
     return;
   }
 
@@ -24,10 +32,26 @@ function sendMail() {
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
       console.log(res);
-      alert("Your message sent successfully!");
+      Swal.fire({
+        icon: "success",
+        title: "Success!",
+        text: "Your message has been sent successfully!",
+        confirmButtonText: "Okay",
+        customClass: {
+          popup: "custom-popup",
+        },
+      });
     })
     .catch((err) => {
       console.log(err);
-      alert("Failed to send your message. Please try again later.");
+      Swal.fire({
+        icon: "error",
+        title: "Failed!",
+        text: "Failed to send your message. Please try again later.",
+        confirmButtonText: "Okay",
+        customClass: {
+          popup: "custom-popup",
+        },
+      });
     });
 }

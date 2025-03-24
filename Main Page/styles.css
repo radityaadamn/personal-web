@@ -303,6 +303,11 @@ footer {
     height: 1.5rem;
     margin: 2px;
 }
+.custom-popup {
+    background-color: #161616 !important;
+    color: #FFFFFF;
+    border-radius: 12px; 
+}
 @media screen and (max-width: 480px) {
     .wrapper1 > h3 {
         font-size: 1.4rem;
@@ -473,6 +478,10 @@ footer {
         justify-content: center;
         align-items: center;
         height: 2.5rem;
+    }
+    .custom-popup {
+        width: 90% !important; 
+        max-width: 400px; 
     }
 }
 @media screen and (min-width: 481px) and (max-width: 834px) {
