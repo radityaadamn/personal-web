@@ -22,6 +22,25 @@ a {
 .content {
     height: 100rem;
 }
+/* Typing Effect Styles */
+.typing-container {
+    display: inline-block;
+    position: relative;
+}
+.blink-cursor {
+    animation: blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #FFFFFF; }
+}
+* {
+    transition: all 0.3s ease-out;
+}
 .wrapper1 {
     display: flex;
     flex-direction: column;
