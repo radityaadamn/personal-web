@@ -16,6 +16,23 @@ function sendMail() {
     return;
   }
 
+  // Disable submit button
+  var submitBtn = document.getElementById("submit");
+  submitBtn.disabled = true;
+
+  // Show loading spinner
+  Swal.fire({
+    title: "Sending...",
+    customClass: {
+      popup: "custom-popup",
+    },
+    allowOutsideClick: false,
+    showConfirmButton: false,
+    didOpen: () => {
+      Swal.showLoading();
+    },
+  });
+
   var params = {
     name: name,
     email: email,
@@ -31,7 +48,6 @@ function sendMail() {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
-      console.log(res);
       Swal.fire({
         icon: "success",
         title: "Success!",
@@ -53,5 +69,9 @@ function sendMail() {
           popup: "custom-popup",
         },
       });
+    })
+    .finally(() => {
+      // Re-enable submit button
+      submitBtn.disabled = false;
     });
 }

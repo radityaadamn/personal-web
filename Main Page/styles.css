@@ -160,10 +160,6 @@ h3 > span {
     width: 300px;
     height: 5rem;
     text-align: center;  
-    transition: transform 0.2s;
-}
-.skill:hover {
-    transform: translateY(-5px);
 }
 .skill > h5 {
     margin-top: 5px;
@@ -275,17 +271,17 @@ input::placeholder, textarea::placeholder {
     justify-content: flex-start;
 }
 @keyframes subtle-glow {
-  0% {
-    box-shadow: 0 0 5px rgba(204, 121, 66, 0.3),
+    0% {
+        box-shadow: 0 0 5px rgba(204, 121, 66, 0.3),
                 0 0 8px rgba(204, 121, 66, 0.15);
-  }
-  50% {
-    box-shadow: 0 0 10px rgba(204, 121, 66, 0.4),
+            }
+            50% {
+                box-shadow: 0 0 10px rgba(204, 121, 66, 0.4),
                 0 0 15px rgba(204, 121, 66, 0.2);
   }
   100% {
-    box-shadow: 0 0 5px rgba(204, 121, 66, 0.3),
-                0 0 8px rgba(204, 121, 66, 0.15);
+      box-shadow: 0 0 5px rgba(204, 121, 66, 0.3),
+      0 0 8px rgba(204, 121, 66, 0.15);
   }
 }
 #submit {
@@ -306,11 +302,6 @@ input::placeholder, textarea::placeholder {
     background-color: #CC7942;
     color: #FFFFFF;
 }
-footer {
-    text-align: center;
-    background-color: #161616;
-    color: #FFFFFF;
-}
 .social {
     display: flex;
     flex-direction: row;
@@ -321,6 +312,17 @@ footer {
     width: 1.5rem;
     height: 1.5rem;
     margin: 2px;
+}
+.social img {
+  transition: transform 0.3s ease;
+}
+.social img:hover {
+  transform: translateY(-3px);
+}
+footer {
+    text-align: center;
+    background-color: #161616;
+    color: #FFFFFF;
 }
 .custom-popup {
     background-color: #161616 !important;
@@ -397,6 +399,15 @@ footer {
         gap: 8px; 
         padding: 5px;
     }
+    .skill {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+    }
+    .skill.show, .project.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
     .wrapper4 {
         display: flex;
         flex-direction: column;
@@ -420,6 +431,9 @@ footer {
         width: 100%;
         height: auto;
         margin: 10px auto;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
     }
     .project > img {
         width: 100%;

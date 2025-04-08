@@ -50,3 +50,15 @@ document.addEventListener("DOMContentLoaded", function () {
   h3Element.appendChild(typingContainer);
   startTyping();
 });
+
+// Scroll Animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('.skill').forEach((el) => observer.observe(el));
+document.querySelectorAll('.project').forEach((el) => observer.observe(el));
