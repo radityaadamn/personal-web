@@ -4,4 +4,4 @@ function gtag() {
 }
 gtag("js", new Date());
 
-gtag("config", "G-3E3R1W7T3R");
+gtag("config", "G-273Z2SN3XN");
