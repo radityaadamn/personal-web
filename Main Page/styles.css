@@ -98,6 +98,8 @@ h3 > span {
 .profileImg > img {
     border-radius: 50%;
     height: 350px;
+    width: 310px;
+    object-fit: cover;
     margin-top: 22px;
     margin-bottom: 20px;
 }
@@ -359,6 +361,7 @@ footer {
     }
     .profileImg > img {
         height: 250px;
+        width: 220px;
     }
     .description {
         background-color: #161616;
