@@ -345,7 +345,7 @@ footer {
         margin-top: 15px;
     }
     .wrapper2 {
-        height: 53.5rem;
+        height: 53.5em;
     }
     .wrapper2 > h2 {
         font-size: 1.6rem;     
@@ -626,4 +626,75 @@ footer {
     .projectDescription > p {
         font-size: 1.2rem;
     }   
+}
+@media screen and (max-width: 320px) {
+    .wrapper1 > h3 {
+        font-size: 1.2rem;
+    }
+    .wrapper1 > p {
+        padding: 8px;
+        font-size: 1rem;
+    }
+    .btnAboutMe {
+        margin-top: 15px;
+    }
+    .wrapper2 {
+        height: 57.5rem;
+    }
+    .programmingLogo {
+        padding: 1px;
+        width: auto;
+    }
+    .programmingLogo > img {  
+        padding: 8px;
+        margin: 1px;
+    }
+    .wrapper3 {
+        height: 45rem;
+    }
+    .skill {
+        width: auto;
+    }
+    .skill > h5 {
+        font-size: 1.2rem;
+    }
+    .skills {
+        gap: 1px; 
+        padding: 5px;
+    }
+    .wrapper4 {
+        height: 35rem;
+    }
+    .project {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+    }
+    .project > img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .projectDescription {
+        padding: 15px;
+    }
+    .projectDescription > h3 {
+        font-size: 0.80rem;
+        margin-bottom : 4px;
+        margin-top: 12px;
+    }
+    .projectDescription > p {
+        font-size: 0.65rem;
+        margin: 4px 0;
+    }
+    .projectDescription > i {
+        margin-top: 5px;
+    }
+     footer > p {
+        font-size: 0.90rem;
+    }
 }
