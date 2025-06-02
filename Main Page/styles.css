@@ -1,9 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
     font-family: montserrat, sans-serif;
     font-weight: 300;
-    scroll-behavior: smooth;
 }
 .navbar-nav .nav-link {
     color: #FFFFFF;
@@ -332,6 +334,17 @@ footer {
     background-color: #161616 !important;
     color: #FFFFFF;
     border-radius: 12px; 
+}
+.input-error {
+  border: 2px solid #ff4d4d !important;
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
 }
 @media screen and (max-width: 480px) {
     .wrapper1 > h3 {

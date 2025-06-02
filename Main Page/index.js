@@ -1,9 +1,30 @@
 function sendMail() {
-  var name = document.getElementById("name").value.trim();
-  var email = document.getElementById("email").value.trim();
-  var message = document.getElementById("message").value.trim();
+  var nameInput = document.getElementById("name");
+  var emailInput = document.getElementById("email");
+  var messageInput = document.getElementById("message");
 
+  var name = nameInput.value.trim();
+  var email = emailInput.value.trim();
+  var message = messageInput.value.trim();
+
+  // Auto-remove errors when users start typing.
+  removeErrorOnInput(nameInput);
+  removeErrorOnInput(emailInput);
+  removeErrorOnInput(messageInput);
+
+  // Reset error class
+  [nameInput, emailInput, messageInput].forEach((input) =>
+    input.classList.remove("input-error")
+  );
+
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Empty validation
   if (name === "" || email === "" || message === "") {
+    if (name === "") nameInput.classList.add("input-error");
+    if (email === "") emailInput.classList.add("input-error");
+    if (message === "") messageInput.classList.add("input-error");
+
     Swal.fire({
       icon: "warning",
       title: "Oops...",
@@ -13,41 +34,53 @@ function sendMail() {
         popup: "custom-popup",
       },
     });
+
     return;
   }
 
-  // Disable submit button
+  // Email validation
+  if (!emailRegex.test(email)) {
+    emailInput.classList.add("input-error");
+
+    Swal.fire({
+      icon: "error",
+      title: "Invalid Email",
+      text: "Please enter a valid email address.",
+      confirmButtonText: "Okay",
+      customClass: {
+        popup: "custom-popup",
+      },
+    });
+
+    return;
+  }
+
+  // Disable button
   var submitBtn = document.getElementById("submit");
   submitBtn.disabled = true;
 
-  // Show loading spinner
+  // Show loading spin
   Swal.fire({
     title: "Sending...",
+    allowOutsideClick: false,
+    showConfirmButton: false,
+    didOpen: () => Swal.showLoading(),
     customClass: {
       popup: "custom-popup",
     },
-    allowOutsideClick: false,
-    showConfirmButton: false,
-    didOpen: () => {
-      Swal.showLoading();
-    },
   });
 
-  var params = {
-    name: name,
-    email: email,
-    message: message,
-  };
-
+  var params = { name, email, message };
   const serviceID = "service_rm0muks";
   const templateID = "template_45gvk6b";
 
   emailjs
     .send(serviceID, templateID, params)
-    .then((res) => {
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
+    .then(() => {
+      nameInput.value = "";
+      emailInput.value = "";
+      messageInput.value = "";
+
       Swal.fire({
         icon: "success",
         title: "Success!",
@@ -71,7 +104,12 @@ function sendMail() {
       });
     })
     .finally(() => {
-      // Re-enable submit button
       submitBtn.disabled = false;
     });
+}
+
+function removeErrorOnInput(input) {
+  input.addEventListener("input", () => {
+    input.classList.remove("input-error");
+  });
 }
