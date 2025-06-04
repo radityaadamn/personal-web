@@ -109,8 +109,8 @@ h3 > span {
     background-color: #161616;
     color: #FFFFFF;
     padding: 20px;
-    width: 40rem;
-    font-size: 1.5rem;
+    width: 28rem;
+    font-size: 1.2rem;
     border-radius: 12px;
     margin-left: 200px;
     text-align: justify;
@@ -122,8 +122,8 @@ h3 > span {
     background-color: #161616;
     border-radius: 12px;
     margin-top: 50px;
-    padding: 8px;
-    width: 73.5rem;
+    padding: 12px;
+    width: 60rem;
 }
 .programmingLogo > img {
     border: none;
@@ -151,7 +151,7 @@ h3 > span {
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px; 
+    gap: 55px; 
     padding: 5px;
     justify-items: center;
 }
@@ -171,7 +171,7 @@ h3 > span {
 .wrapper4 {
     display: flex;
     flex-direction: column;
-    height: 100rem;
+    height: 90rem;
     background-color: #060606;
 }
 .wrapper4 > h2 {
@@ -193,7 +193,7 @@ h3 > span {
     margin: 30px;
 }
 .project > img {
-    width: 60rem;
+    width: 50rem;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -210,7 +210,7 @@ h3 > span {
     border-radius: 12px; 
     color: #FFFFFF;
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -540,35 +540,36 @@ footer {
     }
 }
 @media screen and (min-width: 481px) and (max-width: 834px) {
+    .wrapper1 > h3 {
+        font-size: 2rem;
+    }
     .wrapper1 > p {
         margin-top: 15px; 
         margin-bottom: 35px;
-        font-size: 1.5rem;  
+        font-size: 1.2rem;  
     }
     .aboutme {
         padding: 25px;
     }
     .wrapper2 {
-        height: 40rem;
+        height: 53rem;
     }
     .profile {
         display: flex;
         flex-direction: row;
         margin-top: 50px;
-        padding: 10px;
+        padding: 45px;
     }
     .profileImg > img {
         border-radius: 50%;
-        height: 250px;
-        margin-top: 45px;
-        margin-left: 50px;
+        height: 350px;
     }
     .description {
         background-color: #161616;
         color: #FFFFFF;
         font-size: 1.2rem;
         padding: 20px;
-        width: 30rem;
+        width: auto;
         border-radius: 12px;
         margin-left: 30px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
@@ -580,11 +581,11 @@ footer {
         border-radius: 12px;
         margin-top: 40px;
         padding: 12px;
-        width: 50rem;
+        width: 46rem;
     }
     .programmingLogo > img {
         border: none;
-        width: 4.5rem;
+        width: auto;
         height: 4rem;
         padding: 5px;
     }
@@ -601,14 +602,19 @@ footer {
     }
     .skill {
         padding: 20px 20px;
-        width: 230px;
+        width: 200px;
         height: 7.5rem;
+    }
+    .skills {
+        gap: 30px; 
+        padding: 5px;
     }
     .wrapper4 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 58rem;
+        justify-content: center;
+        height: auto;
     }
     .wrapper4 > h2 {
         margin-top: 35px;
@@ -617,21 +623,23 @@ footer {
         display: flex; 
         flex-direction: column; 
         align-items: center; 
+        justify-content: center;
         padding: 20px;
     }
     .project {
-        width: 100%;
+        max-width: 600px;
+        width: auto;
         height: auto;
-        margin: 15px auto;
+        margin: 20px auto;
     }
     .project img {
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: cover;
     }
     .projectDescription {
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: auto;
         padding: 15px;
         top: 0;
         left: 0;
