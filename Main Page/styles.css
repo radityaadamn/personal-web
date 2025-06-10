@@ -97,7 +97,7 @@ h3 > span {
     flex-direction: row;
     margin-top: 50px;
 }
-.profileImg > img {
+picture > img {
     border-radius: 50%;
     height: 350px;
     width: 310px;
@@ -368,11 +368,11 @@ footer {
         flex-direction: column;
         margin-top: 20px;
     }
-    .profileImg {
+    picture {
         display: flex;
         justify-content: center;
     }
-    .profileImg > img {
+    picture > img {
         height: 250px;
         width: 220px;
     }
@@ -560,7 +560,7 @@ footer {
         margin-top: 50px;
         padding: 45px;
     }
-    .profileImg > img {
+    picture > img {
         border-radius: 50%;
         height: 350px;
     }
