@@ -241,6 +241,13 @@ picture > img {
     margin-top: 15px;
     font-size: 2.5rem;
 }
+.carousel-inner {
+    transition: transform 0.6s ease-in-out;
+    will-change: transform;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
 .certificate-img {
     max-width: 90vw;
     max-height: 55vh;   
@@ -277,6 +284,32 @@ picture > img {
   .carousel-control-next:hover .carousel-control-next-icon::after {
   border-color: #e0e0e0; /* warna hover — lebih terang dari putih */
   }
+  .carousel-indicators {
+    position: static;
+    margin-top: 1rem;
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+  }
+  .carousel-indicators [data-bs-target] {
+    background-color: #ffffff; 
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    margin: 0 4px;
+  }
+  
+  .carousel-indicators .active {
+    opacity: 1;
+    background-color: #ffffff;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8),
+              0 0 24px rgba(255, 255, 255, 0.5);
+  }
+  
 .wrapper6 {
     display: flex;
     align-items: center;
@@ -538,7 +571,7 @@ footer {
         font-size: 1.6rem;
     }
     .certificate-img {
-        max-width: 80%;
+        max-width: 75%;
         height: auto;
         display: block;
         margin: 0 auto;
