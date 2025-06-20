@@ -286,7 +286,7 @@ picture > img {
   }
   .carousel-indicators {
     position: static;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     justify-content: center;
     display: flex;
     gap: 8px;
@@ -570,6 +570,10 @@ footer {
         margin-top: 35px;
         font-size: 1.6rem;
     }
+    .carousel-indicators {
+        margin-top: 2rem;
+        gap: 8px;
+      }
     .certificate-img {
         max-width: 75%;
         height: auto;
@@ -791,7 +795,7 @@ footer {
         width: auto;
     }
     .skill > h5 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .skills {
         gap: 1px; 
@@ -828,6 +832,9 @@ footer {
     }
     .projectDescription > i {
         margin-top: 5px;
+    }
+    .messageForm {
+        font-size: 0.9rem;
     }
      footer > p {
         font-size: 0.90rem;
