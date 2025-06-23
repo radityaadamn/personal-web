@@ -306,7 +306,7 @@ picture > img {
   .carousel-indicators .active {
     opacity: 1;
     background-color: #ffffff;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8),
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
               0 0 24px rgba(255, 255, 255, 0.5);
   }
   
