@@ -783,6 +783,7 @@ footer {
     .programmingLogo {
         padding: 1px;
         width: auto;
+        max-width: 90%;
     }
     .programmingLogo > img {  
         padding: 8px;
@@ -833,8 +834,12 @@ footer {
     .projectDescription > i {
         margin-top: 5px;
     }
+    .wrapper5 {
+        height: 20rem;
+    }
     .messageForm {
         font-size: 0.9rem;
+        width: auto;
     }
      footer > p {
         font-size: 0.90rem;
