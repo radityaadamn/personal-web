@@ -845,8 +845,8 @@ footer {
         font-size: 0.90rem;
     }
 }
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
     wrapper4 {
-        height: 85rem;
+        height: 100rem;
     }
 }
