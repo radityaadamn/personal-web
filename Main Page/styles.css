@@ -1,4 +1,4 @@
-html {
+html {{
     scroll-behavior: smooth;
 }
 body {
@@ -441,7 +441,7 @@ footer {
         margin-top: 15px;
     }
     .wrapper2 {
-        height: 53.5em;
+        height: auto;
     }
     .wrapper2 > h2 {
         font-size: 1.6rem;     
@@ -488,7 +488,7 @@ footer {
         height: 2.2rem;
     }
     .wrapper3 {
-        height: 48.5rem;
+        height: auto;
     }
     .wrapper3 > h2 {
         margin-top: 35px;
@@ -501,6 +501,10 @@ footer {
         padding: 5px;
     }
     .skill {
+        padding: 5px 20px;
+        margin: 15px;
+        width: auto;
+        height: auto;
         opacity: 0;
         transform: translateY(50px);
         transition: all 0.8s ease-out;
@@ -512,7 +516,7 @@ footer {
     .wrapper4 {
         display: flex;
         flex-direction: column;
-        height: 46rem;
+        height: auto;
     }
     .wrapper4 > h2 {
         color: #FFFFFF;
@@ -562,7 +566,7 @@ footer {
     }
     .wrapper5 {
         display: flex;
-        height: 23rem;
+        height: auto;
     }
     .wrapper5 > h2 {
         color: #FFFFFF;
@@ -847,6 +851,6 @@ footer {
 }
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
     wrapper4 {
-        height: 100rem;
+        height: auto;
     }
 }
