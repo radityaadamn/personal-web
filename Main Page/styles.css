@@ -99,11 +99,12 @@ h3 > span {
 }
 picture > img {
     border-radius: 50%;
-    height: 350px;
-    width: 310px;
+    height: 380px;
+    width: 320px;
     object-fit: cover;
     margin-top: 22px;
     margin-bottom: 20px;
+    object-position: center top;
 }
 .description {
     background-color: #161616;
@@ -135,17 +136,47 @@ picture > img {
     height: 4rem;
 }
 .wrapper3 {
-    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #060606;
+    height: auto;
+    width: auto;
+}
+.wrapper3 > h2 {
+    margin-top: 40px;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+}
+.wrapper3 > .description {
+    background-color: #161616;
+    color: #FFFFFF;
+    padding: 20px;
+    max-width: 50rem
+    width: auto;
+    height: auto;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    margin: 20px auto;
+    text-align: justify;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+.wrapper3 > .description > h5 {
+    line-height: 1.8rem;
+}
+.wrapper4 {
     background-color: #060606;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
-.wrapper3 > h2 {
+.wrapper4 > h2 {
     color: #FFFFFF;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 50px;
     font-size: 2.5rem;
 }
 .skills {
@@ -168,13 +199,14 @@ picture > img {
 .skill > h5 {
     margin-top: 5px;
 }
-.wrapper4 {
+.wrapper5 {
     display: flex;
     flex-direction: column;
-    height: 80rem;
+    height: auto;
     background-color: #060606;
+    margin-top: auto;
 }
-.wrapper4 > h2 {
+.wrapper5 > h2 {
     color: #FFFFFF;
     text-align: center;
     margin-top: 20px;
@@ -185,7 +217,7 @@ picture > img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .project {
     position: relative;
@@ -229,13 +261,13 @@ picture > img {
     opacity: 1; 
     transform: translateY(0);
 }
-.wrapper5 {
-    height: 35rem;
+.wrapper6 {
+    height: auto;
     background-color: #060606;
     display: flex;
     flex-direction: column;
 }
-.wrapper5 > h2 {
+.wrapper6 > h2 {
     color: #FFFFFF;
     text-align: center;
     margin-top: 15px;
@@ -310,14 +342,14 @@ picture > img {
               0 0 24px rgba(255, 255, 255, 0.5);
   }
   
-.wrapper6 {
+.wrapper7 {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 35rem;
     background-color: #060606;
 }
-.wrapper6 > .messageForm > h2 {
+.wrapper7 > .messageForm > h2 {
     color: #FFFFFF;
     font-size: 1.5rem;
 }
@@ -487,10 +519,33 @@ footer {
     #sql {
         height: 2.2rem;
     }
-    .wrapper3 {
+.wrapper3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #060606;
+    height: auto;
+}
+.wrapper3 > h2 {
+    font-size: 1.6rem;  
+    margin-top: 40px;
+    color: #FFFFFF;
+}
+.wrapper3 > .description {
+    background-color: #161616;
+    color: #FFFFFF;
+    padding: 20px;
+    width: auto;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    margin: 20px;
+    text-align: justify;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+    .wrapper4 {
         height: auto;
     }
-    .wrapper3 > h2 {
+    .wrapper4 > h2 {
         margin-top: 35px;
         font-size: 1.6rem;
     }
@@ -503,7 +558,6 @@ footer {
     .skill {
         padding: 5px 20px;
         margin: 15px;
-        width: auto;
         height: auto;
         opacity: 0;
         transform: translateY(50px);
@@ -513,12 +567,12 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-    .wrapper4 {
+    .wrapper5 {
         display: flex;
         flex-direction: column;
         height: auto;
     }
-    .wrapper4 > h2 {
+    .wrapper5 > h2 {
         color: #FFFFFF;
         text-align: center;
         margin-top: 35px;
@@ -564,11 +618,11 @@ footer {
     .projectDescription > i {
         margin-top: 5px;
     }
-    .wrapper5 {
+    .wrapper6 {
         display: flex;
         height: auto;
     }
-    .wrapper5 > h2 {
+    .wrapper6 > h2 {
         color: #FFFFFF;
         text-align: center;
         margin-top: 35px;
@@ -585,14 +639,14 @@ footer {
         margin: 0 auto;
         border-radius: 12px;
       }
-    .wrapper6 {
+    .wrapper7 {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 31rem;
         background-color: #060606;
     }
-    .wrapper6 > .messageForm > h2 {
+    .wrapper7 > .messageForm > h2 {
         color: #FFFFFF;
         font-size: 1.5rem;
     }
@@ -660,7 +714,7 @@ footer {
         padding: 25px;
     }
     .wrapper2 {
-        height: 53rem;
+        height: auto;
     }
     .profile {
         display: flex;
@@ -695,17 +749,46 @@ footer {
         border: none;
         width: auto;
         height: 4rem;
-        padding: 5px;
+        padding: 12px;
+        margin: auto;
     }
     #sql {
         height: 4rem;
     }
     .wrapper3 {
-        height: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #060606;
+    height: auto;
+    max-width: auto;
+    width: auto;
+}
+.wrapper3 > h2 {
+    margin-top: 40px;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+}
+.wrapper3 > .description {
+    background-color: #161616;
+    color: #FFFFFF;
+    padding: 20px;
+    max-width: 50rem
+    width: auto;
+    height: auto;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    margin: 20px;
+    text-align: justify;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+    .wrapper4 {
+        height: auto;
         width: auto;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
-    .wrapper3 > h2 {
+    .wrapper4 > h2 {
         margin-bottom: 30px;
     }
     .skill {
@@ -756,7 +839,7 @@ footer {
         font-size: 1.2rem;
     }
     .wrapper5 {
-        height: 40rem;
+        height: auto;
     }
     .certificate-img {
         max-width: 80vw;
@@ -793,8 +876,30 @@ footer {
         padding: 8px;
         margin: 1px;
     }
-    .wrapper3 {
-        height: 45rem;
+.wrapper3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #060606;
+    height: auto;
+}
+.wrapper3 > h2 {
+    margin-top: 40px;
+    color: #FFFFFF;
+}
+.wrapper3 > .description {
+    background-color: #161616;
+    color: #FFFFFF;
+    padding: 20px;
+    width: auto;
+    max-width: 50rem;
+    font-size: 1rem;
+}
+.wrapper3 > .description > h5 {
+    font-size: 1rem;
+}
+    .wrapper4 {
+        height: auto;
     }
     .skill {
         width: auto;
@@ -806,8 +911,8 @@ footer {
         gap: 1px; 
         padding: 5px;
     }
-    .wrapper4 {
-        height: 35rem;
+    .wrapper5 {
+        height: auto;
     }
     .project {
         position: relative;
@@ -838,8 +943,8 @@ footer {
     .projectDescription > i {
         margin-top: 5px;
     }
-    .wrapper5 {
-        height: 20rem;
+    .wrapper6 {
+        height: auto;
     }
     .messageForm {
         font-size: 0.9rem;
